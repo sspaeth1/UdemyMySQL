@@ -4,8 +4,12 @@ var mysql = require('mysql');
 var ejs = require('ejs');
 var bodyParser = require('body-parser');
 
+//removed the need for redirect pages etc to leave off /ejs extension 
 app.set('view engine', 'ejs');
+//alllows req.boy.parse
 app.use(bodyParser.urlencoded({extended:true}));
+// allow public/app.css file to be found
+app.use(express.static( __dirname + '/public'));
 
 var connection = mysql.createConnection({
   host: 'localhost',

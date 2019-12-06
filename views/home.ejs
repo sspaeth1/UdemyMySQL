@@ -4,17 +4,26 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link  href="http://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/app.css">
+
+    <!-- font roboto -->
 
   </head>
 
   <body>
-    <h1>JOIN US</h1>
-    <p class="lead">Enter your email to join
-    <strong> <%= count  %></strong>  others on our waitlist.</p>
-      <form class="" action="/register" name='email' method="post">
-        <input type="text" class='form' value="email" name='email' placeholder="Enter Your Email">
-    <button type="submit" name="button">Join Now!</button>
-      </form>
+    <div class="flex-container">
+      <div class="container">
+        <h1>JOIN US</h1>
+        <p class="lead">Enter your email to join
+        <span class="bolder"> <%= count  %></span>  others on our waitlist.</p>
+          <form class="" action="/register" name='email' method="post">
+            <input type="text" class='form' value="email" name='email' placeholder="Enter Your Email">
+        <button type="submit" name="button">Join Now!</button>
+          </form>
+      </div>
+    </div>
+
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
